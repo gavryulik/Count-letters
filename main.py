@@ -1,4 +1,6 @@
 from translate import Translator
+import time
+import sys
 
 # TODO: RUSSIAN VOWELS
 glas_letter_russian = list(
@@ -152,7 +154,7 @@ def letter():
         povtor_input = input(translate_text("Would you like to enter more words?: ",language_code)).lower()
 
         if povtor_input != "yes" and povtor_input != "так" and povtor_input != "да":
-            print(translate_text("The program is complete", language_code))
-            break
-
+            print(translate_text("The program is complete. Closing in 3 seconds...", language_code))
+            time.sleep(3)
+            sys.exit()
 letter()
