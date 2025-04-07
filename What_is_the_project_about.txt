@@ -1,0 +1,4 @@
+This project is about counting vowels, consonants in words that you enter, 
+here I decided to use the translate module, so as not to translate everything manually, 
+depending on the language you chose, but unfortunately, short sentences are poorly translated, 
+so part of the code had to be translated manually. Now go test:)
